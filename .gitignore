@@ -1,0 +1,112 @@
+# ============================================================
+# BRIDGE (Next.js / Node.js)
+# ============================================================
+
+# Dependencies
+bridge/node_modules/
+bridge/.pnp
+bridge/.pnp.js
+
+# Next.js build output
+bridge/.next/
+bridge/out/
+
+# Production build
+bridge/build/
+
+# Environment files
+bridge/.env
+bridge/.env.local
+bridge/.env.development.local
+bridge/.env.test.local
+bridge/.env.production.local
+
+# WhatsApp session & database (SENSITIVE - never commit)
+bridge/data/
+
+# Debug logs
+bridge/npm-debug.log*
+bridge/yarn-debug.log*
+bridge/yarn-error.log*
+
+# TypeScript
+bridge/*.tsbuildinfo
+bridge/next-env.d.ts
+
+
+# ============================================================
+# SERVER (Python / uv / FastMCP)
+# ============================================================
+
+# Virtual environment
+server/.venv/
+server/venv/
+server/env/
+
+# uv cache & lock artifacts
+server/.uv/
+
+# Python bytecode
+server/__pycache__/
+server/**/__pycache__/
+server/*.py[cod]
+server/**/*.py[cod]
+*.pyo
+
+# Distribution / packaging
+server/dist/
+server/build/
+server/*.egg-info/
+server/.eggs/
+
+# Environment files
+server/.env
+server/.env.local
+
+# Pytest / coverage
+server/.pytest_cache/
+server/.coverage
+server/htmlcov/
+server/coverage.xml
+
+# mypy / ruff / pyright caches
+server/.mypy_cache/
+server/.ruff_cache/
+server/.pyright/
+
+
+# ============================================================
+# GENERAL / OS
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Editors & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
+.cache/
